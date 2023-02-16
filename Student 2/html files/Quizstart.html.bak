@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Rules</title>
+	<link href="Quizstart.css" rel="stylesheet" type="text/css" >
+</head>
+	<body>
+		<img src="logo.jpg"  width="150" height="100">
+		<div class="navbar">
+				<a href="main page.html">Home</a>
+				<a href="../Student 1/Home.HTML">Account</a>
+				<a href="../Student 1/gallery.HTML">Gallery</a>
+				<a href="Rate us.HTML">Rate us</a>
+				<a href="Quizstart.HTML">Quiz</a>
+				<a href="">zzzz</a>
+				<a href="">ffff</a>
+				<a href="">aaaaa</a>
+  
+		</div>
+		<header>
+			<h1 style="color:light blue;" align="center">Welcome to the Quiz</h1>
+		</header>
+				<br><br>
+				<ol>
+					<li>There are total of 5 questions.</li><br>
+					<li>Each question carries 2 marks if correct.</li><br>
+					<li>For each wrong answer -1 marks will be awarded.</li><br>
+					<li>Press the START button to start the quiz.</li><br>
+				</ol>
+				
+		<br><br>
+		<div align="center">
+		<a href="Quiz.html"><input id= "button" type="button" value="START"> </a>
+		</div>
+	
+	</body>
+</html>

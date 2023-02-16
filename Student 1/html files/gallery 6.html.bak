@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+	footer {
+		position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px
+		padding: 3px;
+		background-color:#293243;
+		text-align:center;
+		color: white;
+			}
+</style>
+<link href="../css files/gallery.css" rel="stylesheet" type="text/css" >
+</head>
+<body background="../Image files/bg2.png">
+	<img src = "../Image files/logo.jpg" width="150" height="100"><br>
+		 <div class="navbar">
+				<a href="../../Student 2/html files/main page 5.html">Home</a>
+				<a href="Home.HTML">Account</a>
+				<a href="gallery 5.HTML">Gallery</a>
+				<a href="../../Student 2/html files/Rate us.HTML">Rate us</a>
+				<a href="../../Student 2/html files/Quizstart 5.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 5.html">Purchase</a>
+				<a href="../../student 1/html files/about us.html">About us</a>
+				<a href="../../Student 4/pulldown.html">background Color Changer</a>
+				<a href="../../Student 4/newsletter.html">Subscribe</a>
+		</div>
+	<center>
+	<font color="white">
+	<img src="../Image files/mower.png" width='200' height='155' onmouseover="guitar()" onmouseout="removeContent()" alt="lawnmower">
+	<img src="../Image files/water hose.png" width='200' height='155' onmouseover="blender()" onmouseout="removeContent()" alt="water hose">
+	<img src="../Image files/rake.png"  width='100' height='155' onmouseover="tennis()" onmouseout="removeContent()" alt="rake">
+	<img src="../Image files/showel.png"  height='155' onmouseover="shoes()" onmouseout="removeContent()" alt="showel">
+	<img src="../Image files/tap.png" height='155'onmouseover="waterhoes()" onmouseout="removeContent()" alt="tap">
+	<div id="descriptionAndImageArea"> </div></center>
+	
+	<script>
+		function guitar(){
+			var guitar=document.createElement("img");
+            guitar.id="enlargePhoto";
+            guitar.src ="../Image files/mower.png";
+			guitar.width="300";
+			guitar.height="400";
+			var locationName=document.createElement("div");
+			locationName.id="name";
+			locationName.innerHTML="Lawn Mower";
+			document.getElementById("descriptionAndImageArea").appendChild(locationName);
+			document.getElementById("descriptionAndImageArea").appendChild(guitar);
+			document.getElementById("descriptionAndImageArea").innerHTML+="<p>A lawn mower (also known as a mower, grass cutter or lawnmower) is a machine utilizing one or more revolving blades to cut a grass surface to an even height. The height of the cut grass may be fixed by the design of the mower, but generally is adjustable by the operator, typically by a single master lever, or by a lever or nut and bolt on each of the machine's wheels. The blades may be powered by manual force, with wheels mechanically connected to the cutting blades so that when the mower is pushed forward, the blades spin or the machine may have a battery-powered or plug-in electric motor. The most common self-contained power source for lawn mowers is a small (typically one cylinder) internal combustion engine. Smaller mowers often lack any form of propulsion, requiring human power to move over a surface; walk-behind mowers are self-propelled, requiring a human only to walk behind and guide them. Larger lawn mowers are usually either self-propelled walk-behind types or more often, are ride-on mowers, equipped so the operator can ride on the mower and control it. A robotic lawn mower (lawn-mowing bot, mowbot, etc.) is designed to operate either entirely on its own or less commonly by an operator by remote control.<p>"
+				}
+		
+		function blender(){
+                var blender=document.createElement("img");
+                blender.id="enlargePhoto";
+                blender.src="../Image files/water hose.png";
+				blender.width="400";
+				blender.height="500";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="Water Hose";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(blender);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A hose is a flexible hollow tube designed to carry fluids from one location to another. Hoses are also sometimes called pipes (the word pipe usually refers to a rigid tube, whereas a hose is usually a flexible one), or more generally tubing. The shape of a hose is usually cylindrical (having a circular cross section).<p>"
+				}
+			
+		function tennis(){
+                var tennis=document.createElement("img");
+                tennis.id="enlargePhoto";
+                tennis.src="../Image files/rake.png";
+				tennis.width="300";
+				tennis.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="rake";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(tennis);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A rake (Old English raca, cognate with Dutch hark, German Rechen, from the root meaning to scrape together, heap up) is a broom for outside use; a horticultural implement consisting of a toothed bar fixed transversely to a handle, or tines fixed to a handle, and used to collect leaves, hay, grass, etc., and in gardening, for loosening the soil, light weeding and levelling, removing dead grass from lawns, and generally for purposes performed in agriculture by the harrow.[1]<p>"
+				}
+				
+		function shoes(){
+                var shoes=document.createElement("img");
+                shoes.id="enlargePhoto";
+                shoes.src="../Image files/showel.png";
+				shoes.width="400";
+				shoes.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="showel";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(shoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A shovel is a tool for digging, lifting, and moving bulk materials, such as soil, coal, gravel, snow, sand, or ore.Most shovels are hand tools consisting of a broad blade fixed to a medium-length handle. Shovel blades are usually made of sheet steel or hard plastics and are very strong. Shovel handles are usually made of wood (especially specific varieties such as ash or maple) or glass-reinforced plastic (fiberglass).<p>"
+				}
+
+		function waterhoes(){
+                var waterhoes=document.createElement("img");
+                waterhoes.id="enlargePhoto";
+                waterhoes.src="../Image files/tap.png";
+				waterhoes.width="300";
+				waterhoes.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="Garden Tap";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(waterhoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>Tap water (also known as faucet water, running water, or municipal water) is water supplied through a tap, a water dispenser valve. Tap water is commonly used for drinking, cooking, washing, and toilet flushing. Indoor tap water is distributed through indoor plumbing, which has existed since antiquity but was available to very few people until the second half of the 19th century when it began to spread in popularity in what are now developed countries. Tap water became common in many regions during the 20th century, and is now lacking mainly among people in poverty, especially in developing countries.<p>"
+				}
+				
+		function removeContent(){
+                document.getElementById("descriptionAndImageArea").innerHTML="";
+            }
+	</script>
+<footer>
+  <p>Page editor<br>
+  <a href="student1pageeditor.html"><font color="white">Vinuwara Ronath Jayasuriya</font></a></p>
+</footer>
+</font>
+		
+</body>
+</html>

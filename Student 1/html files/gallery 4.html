@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+	footer {
+		position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px
+		padding: 3px;
+		background-color:#293243;
+		text-align:center;
+		color: white;
+			}
+</style>
+<link href="../css files/gallery.css" rel="stylesheet" type="text/css" >
+</head>
+<body background="../Image files/bg2.png" alt="background">
+	<img src = "../Image files/logo.jpg" width="150" height="100" alt="logo"><br>
+		 <div class="navbar">
+				<a href="../../Student 2/html files/main page 4.html">Home</a>
+				<a href="Home.HTML">Account</a>
+				<a href="gallery 4.HTML">Gallery</a>
+				<a href="../../Student 2/html files/Rate us.HTML">Rate us</a>
+				<a href="../../Student 2/html files/Quizstart 4.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 4.html">Purchase</a>
+				<a href="../../student 1/html files/about us.html">About us</a>
+				<a href="../../student 4/listing.html">Purchase history</a>
+				<a href="../../Student 4/newsletter.html">Subscribe</a>
+  
+		</div>
+	<center><font color="white">
+	<img src="../Image files/shirt.png" width='100' height='155' onmouseover="guitar()" onmouseout="removeContent()" alt="shirt">
+	<img src="../Image files/trouser.png" width='200' height='155' onmouseover="blender()" onmouseout="removeContent()" alt="blender"> 
+	<img src="../Image files/frock.png"  width='100' height='155' onmouseover="tennis()" onmouseout="removeContent()" alt="tennis">
+	<img src="../Image files/shoes.jpg"  height='155' onmouseover="shoes()" onmouseout="removeContent()" alt="shoes">
+	<img src="../Image files/glasses.png" height='155'onmouseover="waterhoes()" onmouseout="removeContent()" alt="glasses">
+	<div id="descriptionAndImageArea"> </div></center>
+	
+	<script>
+	function guitar(){
+			var guitar=document.createElement("img");
+            guitar.id="enlargePhoto";
+            guitar.src ="../Image files/shirt.png";
+			guitar.width="300";
+			guitar.height="400";
+			var locationName=document.createElement("div");
+			locationName.id="name";
+			locationName.innerHTML="shirt";
+			document.getElementById("descriptionAndImageArea").appendChild(locationName);
+			document.getElementById("descriptionAndImageArea").appendChild(guitar);
+			document.getElementById("descriptionAndImageArea").innerHTML+="<p>Originally an undergarment worn exclusively by men, it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments. In British English, a shirt is more specifically a garment with a collar, sleeves with cuffs, and a full vertical opening with buttons or snaps (North Americans would call that a dress shirt, a specific type of collared shirt). A shirt can also be worn with a necktie under the shirt collar.</p>"
+			}
+		
+		function blender(){
+                var blender=document.createElement("img");
+                blender.id="enlargePhoto";
+                blender.src="../Image files/trouser.png";
+				blender.width="300";
+				blender.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="trouser";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(blender);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>Trousers (British English), slacks, or pants are an item of clothing that might have originated in Central Asia, worn from the waist to the ankles, covering both legs separately (rather than with cloth extending across both legs as in robes, skirts, and dresses).In the United Kingdom, the word pants generally means underwear and not trousers.[1] Shorts are similar to trousers, but with legs that come down only to around the area of the knee, higher or lower depending on the style of the garment. To distinguish them from shorts, trousers may be called long trousers in certain contexts such as school uniform, where tailored shorts may be called short trousers in the UK<p>"
+				}
+			
+		function tennis(){
+                var tennis=document.createElement("img");
+                tennis.id="enlargePhoto";
+                tennis.src="../Image files/frock.png";
+				tennis.width="400";
+				tennis.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="frock";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(tennis);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>Some late in the 18th century versions had it made with a cutaway front without a waist seam. This may have been one of the predecessors of the frock coat or at least the dress coat with horizontally cutaway fronts worn for daytime wear by the early 19th century and from which the modern-day evening wear tail dress coat for white tie is derived. The frock coat in turn became cut away into the modern morning coat, giving us the two modern version of tail coats, but the evolution is blurry. Notwithstanding, it seems as if the frock was gradually supplanted by the frock coat in the early 19th century, whereas the former frock style was relegated to evening wear.<p>"
+				}
+				
+		function shoes(){
+                var shoes=document.createElement("img");
+                shoes.id="enlargePhoto";
+                shoes.src="../Image files/shoes.jpg";
+				shoes.width="600";
+				shoes.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="Shoes";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(shoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A shoe is an item of footwear intended to protect and comfort the human foot. Shoes are also used as an item of decoration and fashion. The design of shoes has varied enormously through time and from culture to culture, with form originally being tied to function. Though the human foot can adapt to varied terrains and climate conditions, it is still vulnerable to environmental hazards such as sharp rocks and temperature extremes, which shoes protect against. Some shoes are worn as safety equipment, such as steel-toe boots which are required footwear at industrial worksites.<p>"
+				}
+
+		function waterhoes(){
+                var waterhoes=document.createElement("img");
+                waterhoes.id="enlargePhoto";
+                waterhoes.src="../Image files/glasses.png";
+				waterhoes.width="600";
+				waterhoes.height="250";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="glasses";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(waterhoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>Sunglasses or sun glasses (informally called shades or sunnies; more names below) are a form of protective eyewear designed primarily to prevent bright sunlight and high-energy visible light from damaging or discomforting the eyes. They can sometimes also function as a visual aid, as variously termed spectacles or glasses exist, featuring lenses that are colored, polarized or darkened. In the early 20th century, they were also known as sun cheaters (cheaters then being an American slang term for glasses).<p>"
+				}
+				
+		function removeContent(){
+                document.getElementById("descriptionAndImageArea").innerHTML="";
+            }
+	</script>
+<footer>
+  <p>Page editor<br>
+  <a href="student1pageeditor.html"><font color="white">Vinuwara Ronath Jayasuriya</font></a></p>
+</footer>
+</font>
+		
+</body>
+</html>

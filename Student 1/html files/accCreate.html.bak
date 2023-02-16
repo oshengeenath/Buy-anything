@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create Account</title>
+		<script defer src="../JavaScript files/createAccerrorScript.js" ></script>
+
+		<style>
+			footer {
+			position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px
+			padding: 3px;
+			background-color:#293243	;
+			text-align:center;
+			color: white;
+			}
+			
+			.button {
+			background-color: grey;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			}
+		</style>
+
+	</head>
+	<body background="../Image files/bg2.png">
+	<center><main>
+		<font color="white">
+		<br><br><br><br>
+		<img src = "../Image files/logo.jpg"><br>
+		<form id="Create Account" >
+			<font color="red"><div id="error"></div></font>
+			<br><br>
+			
+			<div>
+			<label for="name">Name  </label>
+			<input id="name" name="name" type="text" >
+			</div>
+			<br>
+			
+			<div>
+			<label for="Age">Age</label>
+			<input input id="Age" name="Age" type="number">
+			</div>
+			<br>
+			
+			<div>
+			<label for="Gender">Gender:  </label>
+			<label for="male">Male:</label>
+			<input type="radio" name="gender" value="m" id="gender">
+			<label for="male">Female:</label>
+			<input type="radio" name="gender" value="f" id="gender">
+			</div>
+			<br>
+			
+			<div>
+			<label for="Occupation">Occupation</label>
+			<input id="Occupation" name="Occupation" type="text">
+			</div>
+			<br>
+			
+			<div>
+			<label>E-mail:</label>
+			<input type="text" name="email" id="email">
+			</div>
+			<br>
+			
+			<div>
+			<label>Password:</label>
+			<input type="password" name="password" id="password">
+			</div>
+			<br>
+		
+			
+			<h3>Criterias</h3>
+			<input type="radio" id="criteria1" value="Musical Instruments" name="criteria">
+			<label for="criterias">Musical Instruments</label>
+			
+			<input type="radio" id="criteria2" value="Electronics" name="criteria">
+			<label for="criterias">Electronics</label>
+			
+			<input type="radio" id="criteria3" value="SportingGoods " name="criteria">
+			<label for="criterias">Sporting Goods</label>
+			
+			<input type="radio" id="criteria4" value="Fasion" name="criteria">
+			<label for="criterias">Fasion</label>
+			
+			<input type="radio" id="criteria5" value="Collectibles" name="criteria">
+			<label for="criterias">Collectible and Art</label>
+			
+			<input type="radio" id="criteria6" value="Home and Garden" name="criteria">
+			<label for="criterias">Home and Garden</label>
+			<div><br>
+			<label>Number of items to appear in the result list:</label>
+			<input type="number" name="results" id="results">
+			</div>
+			<br><br>
+			<div>
+			<input type="reset" class="button" >
+			
+			
+
+			<script>
+			function go(){
+				if(document.getElementById('criteria1').checked){location.href='../../Student 2/html files/main page 1.HTML';}
+				else if(document.getElementById('criteria2').checked){location.href='../../Student 2/html files/main page 2.HTML';}
+				else if(document.getElementById('criteria3').checked){location.href='../../Student 2/html files/main page 3.HTML';}
+				else if(document.getElementById('criteria4').checked){location.href='../../Student 2/html files/main page 4.HTML';}
+				else if(document.getElementById('criteria5').checked){location.href='../../Student 2/html files/main page 5.HTML';}
+				else if(document.getElementById('criteria6').checked){location.href='../../Student 2/html files/main page 6.HTML';}
+
+					}
+			</script>			
+			<button class="button" type="button" id='test' onclick="go()">Submit</button>
+			<br><br>
+			<button class="button"><a href = '../html files/home.html'>go back</a></button>
+			</div>
+			<main>
+			<br><br><br><br><br><br><br><br><br>
+
+
+			<footer>
+			<p>Page editor<br>
+			<a href="student1pageeditor.html"><font color="white">Vinuwara Ronath Jayasuriya</font></a></p>
+			</footer>
+			
+		</form>
+		<font>
+		</center>
+	</body>
+</html>

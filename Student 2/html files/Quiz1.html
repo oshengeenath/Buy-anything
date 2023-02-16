@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+	<script>
+		let q1=prompt("Which instrument resembles a UFO?");
+		let q2=prompt("Which instrument is a string one, but looks like a drum?This instrument is very popular in USA.");
+		let q3=prompt("How many strings does a guitar usually have?");
+		let q4=prompt("Which instrument did Sherlock Holmes play?");
+		let q5=prompt("Which instruments resembles a guitar but has an oval body?");
+		let x =0;
+		
+		
+		
+		let ans1 = "hang";
+			if (q1==ans1){
+				x=x+2;
+				}
+			else{
+				x=x-1;
+				}
+				
+		let ans2='banjo';
+			if(q2==ans2){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		let ans3='six';
+			if(q3==ans3){
+				x=x+2;}
+			else {
+				x=x-1;}	
+				
+		let ans4='violin';
+			if(q4==ans4){
+				x=x+2;}
+			else {
+				x=x-1;}		
+				
+		let ans5='lute';
+			if(q5==ans5){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		if (x>=8){
+			alert('Congratulation! You have earned '+x+' points with a Gold badge,please claim the points in your next purchase');
+			window.open("../../Student 3/html files/purchase 1.1.html", "_self");
+			alert("since you got gold badge you get 15% off")
+			}
+		else if (8>x && x>=6){
+			alert('Congratulation! You have earned '+x+' points with a silver badge,please claim the points in your next purchase');
+			window.open("../../Student 3/html files/purchase 1.2.html", "_self");
+			alert("since you got silver badge you get 10% off")
+			}
+		else if(6>x && x>0){
+			alert('Congratulation! You have earned '+x+' points with a bronze badge,please claim the points in your next purchase');
+			window.open("../../Student 3/html files/purchase 1.3.html", "_self");
+			alert("since you got gold bronze you get 5% off")
+			}
+		
+	
+	</script>
+	
+		<a href="main page 1.html">go back to home</a>
+</body>
+</html>

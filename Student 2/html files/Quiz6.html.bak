@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+	<script>
+		let q1=prompt("wilson's wonder is a kind of which nut tree?");
+		let q2=prompt("Which part of the horseradish plant can be used to make a sauce?");
+		let q3=prompt("Which term is used for a plant that may keep growing in many seasons for at least 2 years");
+		let q4=prompt("Which technical term do we use for planting seeds?");
+		let q5=prompt("In which morden-day nation can we find the hanging gardens of babylon,one of the seven wonders of the ancient world?");
+		let x =0;
+		
+		
+		
+		let ans1 = "walnut";
+			if (q1==ans1){
+				x=x+2;
+				}
+			else{
+				x=x-1;
+				}
+				
+		let ans2='root';
+			if(q2==ans2){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		let ans3='perennial plants';
+			if(q3==ans3){
+				x=x+2;}
+			else {
+				x=x-1;}	
+				
+		let ans4='sowing';
+			if(q4==ans4){
+				x=x+2;}
+			else {
+				x=x-1;}		
+				
+		let ans5='iraq';
+			if(q5==ans5){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		if (x>=8){
+			alert('Congratulation! You have earned '+x+' points with a Gold badge,please claim the points in your next purchase');
+			}
+		else if (8>x && x>=6){
+			alert('Congratulation! You have earned '+x+' points with a silver badge,please claim the points in your next purchase');
+			}
+		else if(6>x>0){
+			alert('Congratulation! You have earned '+x+' points with a bronze badge,please claim the points in your next purchase');
+			}
+	
+	
+	</script>
+	<a href="main page 6.html">go back to home</a>
+</body>
+</html>

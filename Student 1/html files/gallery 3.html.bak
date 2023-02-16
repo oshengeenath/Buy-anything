@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+	footer {
+		position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px
+		padding: 3px;
+		background-color:#293243;
+		text-align:center;
+		color: white;
+			}
+</style>
+<link href="../css files/gallery.css" rel="stylesheet" type="text/css" >
+</head>
+<body background="../Image files/bg2.png" alt="background" alt="background">
+	<img src = "../Image files/logo.jpg" width="150" height="100" alt="logo"><br>
+		 <div class="navbar">
+				<a href="../../Student 2/html files/main page 3.html">Home</a>
+				<a href="Home.HTML">Account</a>
+				<a href="gallery 3.HTML">Gallery</a>
+				<a href="../../Student 2/html files/Rate us.HTML">Rate us</a>
+				<a href="../../Student 2/html files/Quizstart 3.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 3.html">Purchase</a>
+				<a href="../../student 1/html files/about us.html">About us</a>
+				<a href="../../Student 4/pulldown.html">background Color Changer</a>
+				<a href="../../Student 4/newsletter.html">Subscribe</a>
+  
+  
+		</div>
+	<center><font color="white">
+	<img src="../Image files/bat.png" width='50' height='155' onmouseover="guitar()" onmouseout="removeContent()" alt="bat">
+	<img src="../Image files/ball.png" width='155' height='155' onmouseover="blender()" onmouseout="removeContent()" alt="ball">
+	<img src="../Image files/badminton.png"  width='100' height='155' onmouseover="tennis()" onmouseout="removeContent()" alt="badminton">
+	<img src="../Image files/pads.png"  height='155' onmouseover="shoes()" onmouseout="removeContent()" alt="Pads">
+	<img src="../Image files/golf.png" height='155'onmouseover="waterhoes()" onmouseout="removeContent()" alt="golf">
+	<div id="descriptionAndImageArea"> </div></center>
+	
+	<script>
+		function guitar(){
+			var guitar=document.createElement("img");
+            guitar.id="enlargePhoto";
+            guitar.src ="../Image files/bat.png";
+			guitar.width="200";
+			guitar.height="400";
+			var locationName=document.createElement("div");
+			locationName.id="name";
+			locationName.innerHTML="bat";
+			document.getElementById("descriptionAndImageArea").appendChild(locationName);
+			document.getElementById("descriptionAndImageArea").appendChild(guitar);
+			document.getElementById("descriptionAndImageArea").innerHTML+="<p>A cricket bat is a specialised piece of equipment used by batters in the sport of cricket to hit the ball, typically consisting of a cane handle attached to a flat-fronted willow-wood blade. It may also be used by a batter who is making ground to avoid a run out, by holding the bat and touching the ground with it. The length of the bat may be no more than 38 inches (96.5 cm) and the width no more than 4.25 inches (10.8 cm). Its use is first mentioned in 1624. Since 1979, a law change has provided that cricket bats can only be made from wood.</p>"
+				}
+		
+		function blender(){
+                var blender=document.createElement("img");
+                blender.id="enlargePhoto";
+                blender.src="../Image files/ball.png";
+				blender.width="300";
+				blender.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="ball";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(blender);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A cricket ball is a hard, solid ball used to play cricket. A cricket ball consists of a cork core wound with string then a leather cover stitched on, and manufacture is regulated by cricket law at first-class level. The trajectory of a cricket ball when bowled, through movement in the air, and off the ground, is influenced by the action of the bowler and the condition of the ball and the pitch, while working on the cricket ball to obtain optimal condition is a key role of the fielding side. The principal method through which the batsman scores runs is by hitting the ball, with the bat, into a position where it would be safe to take a run, or by directing the ball through or over the boundary. Cricket balls are harder and heavier than baseballs.<p>"
+				}
+			
+		function tennis(){
+                var tennis=document.createElement("img");
+                tennis.id="enlargePhoto";
+                tennis.src="../Image files/badminton.png";
+				tennis.width="300";
+				tennis.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="badminton";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(tennis);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A racket, or racquet,[1] is a sports implement used for striking a ball or shuttlecock in games such as squash, tennis, racquetball, badminton and padel. In the strictest sense a racket consists of a handled frame with an open hoop across which a network of strings is stretched tightly. Some rackets may have a solid or perforated hitting surface instead of a network of strings. Such rackets may be called a paddle or bat. Collectively, these games are known as racket sports.</p>"
+				}
+				
+		function shoes(){
+                var shoes=document.createElement("img");
+                shoes.id="enlargePhoto";
+                shoes.src="../Image files/pads.png";
+				shoes.width="300";
+				shoes.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML=" knee pads";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(shoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A golfer typically transports golf clubs in a golf bag. Modern golf bags are made of nylon, canvas and/or leather, with plastic or metal reinforcement and framing, but historically bags have been made from other materials. Golf bags have several pockets designed for carrying various equipment and supplies required over the course of a round of golf. Virtually all bags are sectioned off with rigid supports at the top opening, both for rigidity and to separate clubs of various types for easier selection. More expensive bags have sleeves or pockets within the main compartment for each individual club, allowing for the desired club to be more easily removed from the bag and then returned without interference from the grips of the other clubs or internal hardware of the bag.</p>"
+				}
+
+		function waterhoes(){
+                var waterhoes=document.createElement("img");
+                waterhoes.id="enlargePhoto";
+                waterhoes.src="../Image files/golf.png";
+				waterhoes.width="300";
+				waterhoes.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="golf";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(waterhoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>Pads (also called leg guards) are protective equipment used by batters in the sport of cricket, catchers in the sports of baseball and fastpitch softball, and by goaltenders in ice hockey, bandy and box lacrosse. They serve to protect the legs from impact by a hard ball or puck at high speed which could otherwise cause injuries to the lower legs.</p>"
+				}				
+				
+		function removeContent(){
+                document.getElementById("descriptionAndImageArea").innerHTML="";
+            }
+	</script>
+<footer>
+  <p>Page editor<br>
+  <a href="student1pageeditor.html"><font color="white">Vinuwara Ronath Jayasuriya</font></a></p>
+</footer>
+</font>
+		
+</body>
+</html>

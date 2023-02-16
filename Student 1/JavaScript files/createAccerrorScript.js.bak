@@ -1,0 +1,49 @@
+const name=document.getElementById("name")
+const Age=document.getElementById("Age")
+const Gender=document.getElementById("Gender")
+const Occupation=document.getElementById("Occupation")
+const Email=document.getElementById("email")
+const Password=document.getElementById("password")
+const test=document.getElementById('test')
+const form=document.getElementById("Create Account")
+
+
+const errorElement=document.getElementById("error")
+
+function display() 
+	{
+	alert('Dear '+name.value+', Thank you for using Signing Up with us, the recommended results will be shown in a while.');
+	}
+
+test.addEventListener('click',myfunction())
+
+function myfunction()	
+	{
+	let messages = []
+	if (name.value===''||name.value==null){
+		messages.push('Name is required')
+	}
+	if (Age.value===''||Age.value==null){
+		messages.push('Age is required')
+	}
+	
+	if (Occupation.value===''||Occupation.value==null){
+		messages.push('Occupation must be filled in')
+	}
+	
+	if (Email.value===''||Email.value==null){
+		messages.push('Email is compulsary')
+	}
+	if (password.value===''||password.value==null){
+		messages.push('Password is compulsary')
+	}
+	
+	if(messages.length>0){
+		errorElement.innerText=messages.join(' / ')
+		
+	}
+	
+	else{display()}
+	
+
+})

@@ -1,0 +1,58 @@
+const name=document.getElementById("name")
+const Email=document.getElementById("email")
+const comment=document.getElementById("comment")
+
+const star5=document.getElementById("star5")
+const star4=document.getElementById("star4")
+const star3=document.getElementById("star3")
+const star2=document.getElementById("star2")
+const star1=document.getElementById("star1")
+
+const form=document.getElementById("usrform")
+
+const errorElement=document.getElementById("error")
+var x;
+	
+
+function thankyou()
+	{
+		if  (star5.checked==true){
+			x='Amazing';
+		}
+		else if  (star4.checked==true){
+			x='Excellent';
+		}
+		else if  (star3.checked==true){
+			x='Good';
+		}
+		else if  (star2.checked==true){
+			x='Bad';
+		}
+		else if  (star1.checked==true){
+			x='Worst';
+		}
+	alert('Dear '+name.value+', Thank you very much for your feedback. You have rated our site as '+x+' and your comment was '+comment.value+'...');
+	}
+	
+form.addEventListener('submit',(e)=>{
+	let messages = []
+	if (name.value===''||name.value==null){
+		messages.push('Name is required')
+	}
+	
+	if (Email.value===''||Email.value==null){
+		messages.push('Email is compulsary')
+	}
+	
+	if (comment.value===''||comment.value==null){
+		messages.push('Comment is compulsary')
+	}
+	
+	if(messages.length>0){
+		e.preventDefault()
+		errorElement.innerText=messages.join(' / ')
+		
+	}
+	else{thankyou()}
+	
+})

@@ -1,0 +1,124 @@
+.<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+	footer {
+		position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px
+		padding: 3px;
+		background-color:#293243;
+		text-align:center;
+		color: white;
+			}
+</style>
+<link href="../css files/gallery.css" rel="stylesheet" type="text/css" >
+</head>
+<body background="../Image files/bg2.png" alt="background">
+	<img src = "../Image files/logo.jpg" width="150" height="100" alt="logo"><br>
+		 <div class="navbar">
+				<a href="../../Student 2/html files/main page 1.html">Home</a>
+				<a href="Home.HTML">Account</a>
+				<a href="gallery 1.HTML">Gallery</a>
+				<a href="../../Student 2/html files/Rate us.HTML">Rate us</a>
+				<a href="../../Student 2/html files/Quizstart 1.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 1.html">Purchase</a>
+				<a href="../../student 1/html files/about us.html">About us</a>
+				<a href="listing.html">Purchase history</a>
+				<a href="../../Student 4/newsletter.html">Subscribe</a>
+  
+  
+		</div>
+	<center><font color="white">
+	<img src="../Image files/piano.png" width='300' height='155' onmouseover="guitar()" onmouseout="removeContent()" alt="piano">
+	<img src="../Image files/electric guitar.png" width='150' height='200' onmouseover="blender()" onmouseout="removeContent()" alt="electric guitar">
+	<img src="../Image files/drum set.png"  width='300' height='155' onmouseover="tennis()" onmouseout="removeContent()" alt="drim set">
+	<img src="../Image files/trumpet.png"  height='155' onmouseover="shoes()" onmouseout="removeContent()" alt="trumpet">
+	<img src="../Image files/cajon.png" height='155'onmouseover="waterhoes()" onmouseout="removeContent()" alt="cajon">
+	<div id="descriptionAndImageArea"> </div></center>
+	
+	<script>
+		function guitar(){
+			var guitar=document.createElement("img");
+            guitar.id="enlargePhoto";
+            guitar.src ="../Image files/piano.png";
+			guitar.width="700";
+			guitar.height="400";
+			var locationName=document.createElement("div");
+			locationName.id="name";
+			locationName.innerHTML="Piano";
+			document.getElementById("descriptionAndImageArea").appendChild(locationName);
+			document.getElementById("descriptionAndImageArea").appendChild(guitar);
+			document.getElementById("descriptionAndImageArea").innerHTML+="<p>A keyboard instrument is a musical instrument played using a keyboard, a row of levers which are pressed by the fingers. The most common of these are the piano, organ, and various electronic keyboards, including synthesizers and digital pianos. Other keyboard instruments include celestas, which are struck idiophones operated by a keyboard, and carillons, which are usually housed in bell towers or belfries of churches or municipal buildings</p>"
+		}
+		
+		function blender(){
+                var blender=document.createElement("img");
+                blender.id="enlargePhoto";
+                blender.src="../Image files/electric guitar.png";
+				blender.width="300";
+				blender.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="electric guitar";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(blender);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>The guitar is a fretted musical instrument that typically has six strings. It is held flat against the player's body and played by strumming or plucking the strings with the dominant hand, while simultaneously pressing selected strings against frets with the fingers of the opposite hand. A plectrum or individual finger picks may also be used to strike the strings. The sound of the guitar is projected either acoustically, by means of a resonant chamber on the instrument, or amplified by an electronic pickup and an amplifier.</p>"
+            }
+			
+		function tennis(){
+                var tennis=document.createElement("img");
+                tennis.id="enlargePhoto";
+                tennis.src="../Image files/drum set.png";
+				tennis.width="600";
+				tennis.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="drum set";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(tennis);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>The drum is a member of the percussion group of musical instruments. In the Hornbostel-Sachs classification system, it is a membranophone. Drums consist of at least one membrane, called a drumhead or drum skin, that is stretched over a shell and struck, either directly with the player's hands, or with a percussion mallet, to produce sound. There is usually a resonant head on the underside of the drum. Other techniques have been used to cause drums to make sound, such as the thumb roll. Drums are the world's oldest and most ubiquitous musical instruments, and the basic design has remained virtually unchanged for thousands of years</p>"
+				}
+				
+		function shoes(){
+                var shoes=document.createElement("img");
+                shoes.id="enlargePhoto";
+                shoes.src="../Image files/trumpet.png";
+				shoes.width="600";
+				shoes.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="trumpet";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(shoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>The trumpet is a brass instrument commonly used in classical and jazz ensembles. The trumpet group ranges from the piccolo trumpet with the highest register in the brass family, to the bass trumpet, which is pitched one octave below the standard B♭ or C Trumpet.</p>"
+				}
+
+		function waterhoes(){
+                var waterhoes=document.createElement("img");
+                waterhoes.id="enlargePhoto";
+                waterhoes.src="../Image files/cajon.png";
+				waterhoes.width="400";
+				waterhoes.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="cajon";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(waterhoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>A cajón is a box-shaped percussion instrument originally from Peru, played by slapping the front or rear faces with the hands, fingers, or sometimes implements such as brushes, mallets, or sticks. Cajones are primarily played in Afro-Peruvian music, but has made its way into flamenco as well.</p>"
+				}				
+				
+		function removeContent(){
+                document.getElementById("descriptionAndImageArea").innerHTML="";
+            }
+	</script>
+<footer>
+  <p>Page editor<br>
+  <a href="student1pageeditor.html"><font color="white">Vinuwara Ronath Jayasuriya</font></a></p>
+</footer>
+</font>
+		
+</body>
+</html>

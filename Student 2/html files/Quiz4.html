@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+	<script>
+		let q1=prompt("Who was the first male musician to appear on a cover of vogue?");
+		let q2=prompt("What was the slogan of sports brand Nike?");
+		let q3=prompt("Who were blue jeans originally made for?");
+		let q4=prompt("H&M was founded in which Europian country?");
+		let q5=prompt("The word 'pajama' originated in which country?");
+		let x =0;
+		
+		
+		
+		let ans1 = "harry styles";
+			if (q1==ans1){
+				x=x+2;
+				}
+			else{
+				x=x-1;
+				}
+				
+		let ans2='just do it';
+			if(q2==ans2){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		let ans3='miners';
+			if(q3==ans3){
+				x=x+2;}
+			else {
+				x=x-1;}	
+				
+		let ans4='sweden';
+			if(q4==ans4){
+				x=x+2;}
+			else {
+				x=x-1;}		
+				
+		let ans5='india';
+			if(q5==ans5){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		if (x>=8){
+			alert('Congratulation! You have earned '+x+' points with a Gold badge,please claim the points in your next purchase');
+			window.open("../../Student 3/html files/purchase 4.1.html", "_self");
+			alert("since you got gold badge you get 15% off")
+			}
+		else if (8>x && x>=6){
+			alert('Congratulation! You have earned '+x+' points with a silver badge,please claim the points in your next purchase');
+			window.open("../../Student 3/html files/purchase 4.2.html", "_self");
+			alert("since you got Silver badge you get 10% off")
+			}
+		else if(6>x && x>0){
+			alert('Congratulation! You have earned '+x+' points with a bronze badge,please claim the points in your next purchase');			
+			window.open("../../Student 3/html files/purchase 4.3.html", "_self");
+			alert("since you got Bronze badge you get 5% off")
+			}
+	
+	
+	</script>
+	<a href="main page 4.html">go back to home</a>
+</body>
+</html>

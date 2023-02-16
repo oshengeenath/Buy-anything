@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listing.css">
+	<link rel="stylesheet" href="bgchange.css">
+    <script src="change.js"></script>
+	<link rel="stylesheet" href="../Student 2/css files/main.css">
+    <title>listing page</title>
+</head>
+<body >
+
+	<img src="../Student 2/image files/logo.jpg"  width="150" height="100">
+		 <div class="navbar">
+			<a href="../student 2/html files/main page 1.html">Home</a>
+			<a href="../student 1/html files/Home.HTML">Account</a>
+			<a href="../student 1/html files/gallery 1.HTML">Gallery</a>
+			<a href="../student 2/html files/Rate us.HTML">Rate us</a>
+			<a href="../student 2/html files/Quizstart 1.HTML">Quiz</a>
+			<a href="../student 3/html files/purchase 1.html">Purchase</a>
+			<a href="../student 3/html files/aboutus.html">About us</a>
+			<a href="listing.html">Purchase history</a>
+			<a href="newsletter.html">Subscribe</a>
+		</div>
+		
+		
+    <p>Change the background color:</p>
+    <select class="selectColor" onchange="color(this.value)">
+        <option value="#ff2323">Red</option>
+        <option value="#66ff00">Green</option>
+        <option value="#9b1fe8">Purple</option>
+        <option value="#ffff12">Yellow</option>
+        <option value="#ff69b4">Pink</option>
+    </select>
+   
+    
+    <div id='content'>
+        <table id="orders" cellpadding="10px" style="text-align: left;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>    
+    <script>
+
+        let xmlContent = '';
+        let tableOrders = document.getElementById('orders');
+
+        fetch('listing.xml').then((response)=>{
+            response.text().then((xml)=>{
+                xmlContent = xml;
+                let parser  = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+                let orders = xmlDOM.querySelectorAll('item');
+
+                orders.forEach(orderXmlNode => {
+                    let row = document.createElement('tr');
+
+                    //Name
+                    let td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[0].innerHTML;
+                    row.appendChild(td);
+
+                    //Quantity
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[1].innerHTML;
+                    row.appendChild(td);
+
+                    //Price
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[2].innerHTML;
+                    row.appendChild(td);
+
+                    //Discount
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[3].innerHTML;
+                    row.appendChild(td);
+
+                    //Amount
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[4].innerHTML;
+                    row.appendChild(td);
+
+                    tableOrders.children[1].appendChild(row);
+
+
+                });
+
+
+            });
+
+        });
+    </script>
+	
+    
+</body>
+</html>

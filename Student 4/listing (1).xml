@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orders>
+   <item id="1">
+      <name>piano</name>
+      <quantity>1</quantity>
+      <price>$ 20.00</price>
+      <discount>0%</discount>
+      <amount>$ 20.00</amount>
+   </item>
+   <item id="2">
+      <name>cajon</name>
+      <quantity>2</quantity>
+      <price>$ 20.00</price>
+      <discount>10%</discount>
+      <amount>$ 36.00</amount>
+   </item>
+  <item id="3">
+      <name>phone</name>
+      <quantity>3</quantity>
+      <price>$ 300.00</price>
+      <discount>15%</discount>
+      <amount>$ 765.00</amount>
+   </item>
+   <item id="4">
+      <name>washing machine</name>
+      <quantity>1</quantity>
+      <price>$ 100.00</price>
+      <discount>0%</discount>
+       <amount>$ 100.00</amount>
+   </item>
+   <item id="5">
+      <name>ball</name>
+      <quantity>5</quantity>
+      <price>$ 50.00</price>
+      <discount>30%</discount>
+       <amount>$ 175.00</amount>
+   </item>
+   <item id="6">
+      <name>leather bat</name>
+      <quantity>2</quantity>
+      <price>$ 10.00</price>
+      <discount>0%</discount>
+       <amount>$ 20.00</amount>
+   </item>
+   <item id="7">
+      <name>leg pads</name>
+      <quantity>1</quantity>
+      <price>$ 60.00</price>
+      <discount>5%</discount>
+       <amount>$ 57.00</amount>
+   </item>
+  <item id="8">
+      <name>shoes</name>
+      <quantity>1</quantity>
+      <price>$ 70.00</price>
+      <discount>10%</discount>
+       <amount>$ 63.00</amount>
+   </item>
+   <item id="9">
+      <name>glasses</name>
+      <quantity>2</quantity>
+      <price>$ 20.00</price>
+      <discount>0%</discount>
+       <amount>$ 40.00</amount>
+   </item>
+  <item id="10">
+      <name>garden rake</name>
+      <quantity>1</quantity>
+      <price>$ 20.00</price>
+      <discount>0%</discount>
+       <amount>$ 20.00</amount>
+   </item>
+   <item id="11">
+      <name>black showel</name>
+      <quantity>3</quantity>
+      <price>$ 20.00</price>
+      <discount>25%</discount>
+      <amount>$ 45.00</amount>
+   </item>
+</orders>

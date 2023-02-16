@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Rules</title>
+	<link href="../css files/Quizstart.css" rel="stylesheet" type="text/css" >
+		<style>
+			footer {
+			position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px
+			padding: 3px;
+			background-color:#293243	;
+			text-align:center;
+			color: white;
+			}
+		</style>
+</head>
+	<body background="../image files/bg2.png" alt="background">
+		<img src="../image files/logo.jpg"  width="150" height="100" alt="logo">
+		<div class="navbar">
+				<a href="main page 1.html">Home</a>
+				<a href="../../Student 1/html files/Home.HTML">Account</a>
+				<a href="../../Student 1/html files/gallery 1.HTML">Gallery</a>
+				<a href="Rate us.HTML">Rate us</a>
+				<a href="Quizstart 1.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 1.html">Purchase</a>
+				<a href="../../student 3/html files/aboutus.html">About us</a>
+				<a href="../../Student 4/pulldown.html">background Color Changer</a>
+				<a href="../../Student 4/newsletter.html">Subscribe</a>
+  
+		</div>
+		<header>
+			<font size="6" >
+			<h1 style="font-family":"Bahnschrift SemiCondensed;" align="center">Welcome to the Quiz</h1>
+			</font>
+		</header>
+				<br><br>
+				<ol class="center"><font size="5" color="white">
+					<li>There are total of 5 questions.</li><br>
+					<li>Each question carries 2 marks if correct.</li><br>
+					<li>For each wrong answer -1 marks will be awarded.</li><br>
+					<li>Press the START button to start the quiz.</li><br>
+					</font>
+					
+				</ol>
+				
+		<br><br>
+		<div align="center">
+		<a href="Quiz1.html"><input id= "button" class="button" type="button" value="START"> </a>
+		</div>
+		
+		<footer>
+		<p>Page editor<br>
+		<a href="student2pageeditor.html"><font color="white">Oshen Geenath</font></a></p>
+		</footer>
+	</body>
+</html>

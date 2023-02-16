@@ -1,0 +1,113 @@
+	
+
+body{
+	background-color: ;
+}
+
+
+.heading{
+	
+  text-align: center;
+  color:black;
+  
+
+  font-size: 50px;
+  font-family:Arial Black;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size:20px;
+}
+ 
+
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial;
+  width:100%;
+   display:inline-block;
+  
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-align:center;
+  width:120px;
+ 
+ 
+  
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ff9900;
+  text-transform:uppercase;
+  display:inline-block;
+    
+  
+}
+
+
+.navbar {
+  background-color: #000000;
+  overflow: hidden;
+  width:100%;
+  font-family:Arial;
+  overflow:visible;
+  border-radius:10px;
+  margin-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navbar a {
+	float: left;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px 40px;
+	text-decoration: none;
+	font-size: 18px;
+	opacity: 0.85;
+	transition: 0.5s;
+}
+
+.navbar a:hover {
+   background-color: purple;
+   color: white;
+   font-size:20px;
+}
+
+.navbar a.active {
+   background-color: #000099;
+   color: white;
+   
+}
+
+
+
+
+.logo img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  
+}
+
+
+

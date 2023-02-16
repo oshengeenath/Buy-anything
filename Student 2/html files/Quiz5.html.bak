@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+	<script>
+		let q1=prompt("Which 1851 novel was first published in Britain under the title The Whale?");
+		let q2=prompt("The Bennet family appear in which Jane Austen novel?");
+		let q3=prompt("About which otter did Henry Williamson write a 1927 novel?");
+		let q4=prompt("Which pottery form takes its name from the Italian for'baked earth'?");
+		let q5=prompt("What was the first name of Agatha Christie's Miss Marple?");
+		let x =0;
+		
+		
+		
+		let ans1 = "moby dick";
+			if (q1==ans1){
+				x=x+2;
+				}
+			else{
+				x=x-1;
+				}
+				
+		let ans2='pride and prejudice';
+			if(q2==ans2){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		let ans3='tarka';
+			if(q3==ans3){
+				x=x+2;}
+			else {
+				x=x-1;}	
+				
+		let ans4='terracotta';
+			if(q4==ans4){
+				x=x+2;}
+			else {
+				x=x-1;}		
+				
+		let ans5='jane';
+			if(q5==ans5){
+				x=x+2;}
+			else {
+				x=x-1;}
+				
+		if (x>=8){
+			alert('Congratulation! You have earned '+x+' points with a Gold badge,please claim the points in your next purchase');
+			}
+		else if (8>x && x>=6){
+			alert('Congratulation! You have earned '+x+' points with a silver badge,please claim the points in your next purchase');
+			}
+		else if(6>x>0){
+			alert('Congratulation! You have earned '+x+' points with a bronze badge,please claim the points in your next purchase');
+			}
+	
+	
+	</script>
+	<a href="main page 5.html">go back to home</a>
+</body>
+</html>

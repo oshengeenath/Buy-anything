@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listing.css">
+    <title>listing page</title>
+</head>
+<body>
+    
+    <div id='content'>
+        <table id="orders" cellpadding="10px" style="text-align: left;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>    
+    <script>
+
+        let xmlContent = '';
+        let tableOrders = document.getElementById('orders');
+
+        fetch('listing.xml').then((response)=>{
+            response.text().then((xml)=>{
+                xmlContent = xml;
+                let parser  = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+                let orders = xmlDOM.querySelectorAll('item');
+
+                orders.forEach(orderXmlNode => {
+                    let row = document.createElement('tr');
+
+                    //Name
+                    let td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[0].innerHTML;
+                    row.appendChild(td);
+
+                    //Quantity
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[1].innerHTML;
+                    row.appendChild(td);
+
+                    //Price
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[2].innerHTML;
+                    row.appendChild(td);
+
+                    //Discount
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[3].innerHTML;
+                    row.appendChild(td);
+
+                    //Amount
+                    td  = document.createElement('td');
+                    td.innerText = orderXmlNode.children[4].innerHTML;
+                    row.appendChild(td);
+
+                    tableOrders.children[1].appendChild(row);
+
+
+                });
+
+
+            });
+
+        });
+    </script>
+    
+</body>
+</html>

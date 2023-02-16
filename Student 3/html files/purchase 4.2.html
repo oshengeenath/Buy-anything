@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../css files/main.css" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="../css files/buyproducts.css">
+
+	<title>Main page</title>
+</head>
+	<body>
+		<img src="../image files/logo.jpg"  width="150" height="100">
+		 <div class="navbar">
+				<a href="../../student 2/html files/main page 4.html">Home</a>
+				<a href="../../student 1/html files/Home.HTML">Account</a>
+				<a href="../../student 1/html files/gallery 4.HTML">Gallery</a>
+				<a href="../../student 2/html files/Rate us.HTML">Rate us</a>
+				<a href="../../student 2/html files/Quizstart 4.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 4.html">Purchase</a>
+				<a href="aboutus.html">About us</a>
+				<a href="../../student 4/listing.html">Purchase history</a>
+				<a href="../../Student 4/newsletter.html">Subscribe</a>  
+		</div>
+		<form>
+		<!-------Products-------->
+		
+		<div class="product">
+					
+				<div id="drumSet">
+					<h2 id="head2">Trouser</h2>
+					<img src="../image files/trouser.png"style="width:22%">
+					<div class="pro" id="pro1">Hameedias blue trousers for men </div>
+					<div class="pro" id="pro2">$ 15.00</div>
+					<div class="amount" id="pro3">Quantity<input type="number" placeholder="0" id="Qty1"></div>
+					<div class="card" id="pro3.5"><button>Add to Cart</button></div>
+
+				</div>
+				
+				<div id="electricGuitar">
+					<h2 id="head3">Shirt</h2>
+					<img src="../image files/shirt.png"  style="width:22%">
+					<div class="pro" id="pro4">Signature blue shirt</div>	
+					<div class="pro" id="pro5">$ 20.00</div>
+					<div class="amount" id="pro6"> Quantity <input type="number" placeholder="0" id="Qty2"></div>
+					<div class="card" id="pro6.5"><button>Add to Cart</button></div>
+
+				</div>
+				
+				
+					
+				<div id="trumpet">
+					<h2 id="head4">Shoes</h2>
+					<img src="../image files/Shoes.png"style="width:22%">
+					<div class="pro" id="pro7">Adidas Red shoes </div>
+					<div class="pro" id="pro8">$ 70.00</div>
+					<div class="amount" id="pro9" >Quantity<input type="number" placeholder="0" id="Qty3"></div>
+					<div class="card" id="pro9.5"><button>Add to Cart</button></div>
+
+				</div>
+					
+				<div id="piano">
+					<h2 id="head5">Frock</h2>
+					<img src="../image files/frock.png"style="width:30%">
+					<div class="pro" id="pro10">Dark purple frock </div>
+					<div class="pro" id="pro11">$ 100.00</div>
+					<div class="amount" id="pro12" >Quantity<input type="number" placeholder="0" id="Qty4"></div>
+					<div class="card" id="pro6.5"><button>Add to Cart</button></div>
+
+				</div>
+				
+				
+				<div id="cajon">
+					<h2 id="head6">Glasess</h2>
+					<img src="../image files/glasses.png" style="width:30%">
+					<div class="pro" id="pro10">Rayban black glasses</div>
+					<div class="pro" id="pro11">$ 20.00</div>
+					<div class="amount" id="pro12" >Quantity<input type="number" placeholder="0" id="Qty5"></div>
+					<div class="card" id="pro6.5"><button>Add to Cart</button></div>
+
+				</div>
+				
+				
+				<!------- Submission Button -------->	
+
+				<input type="button" class="flip" value="Place Order" onClick="window.location='#formdata'" />
+				<hr>
+				
+				</div>
+				
+				<!------- Form -------->
+			
+			<div class="details" id="formdata">
+
+				<h1 id="head">Personal Details</h1>
+				<hr>
+				<input type="text" id="firstname" placeholder="First name">
+				<input type="text" id="lastname"  placeholder="Last name">
+				<input type="email" id="email" placeholder="E-mail">
+				<input type="tel" id="TPno"  placeholder="0123456789">
+				<input type="text" id="del" placeholder="Delivery address">
+						
+				<h1 id="head1" class="form">Payment Details</h1>
+				<hr>
+				<input type="text" id="cardname" placeholder="Name on card">
+				<input type="text"  id="cardnumber" placeholder="1111-2222-3333-4444">
+				<input type="datetime"  id="expyear" placeholder="Expiry Date">
+				<input type="text" id="bill" placeholder="Fill if delivery is not Billing">
+								
+				<input type="submit" Value="Submit" onclick="displayMessage()">
+			</div>
+		</form>
+				
+	</body>
+				
+				
+				
+				<script>
+	
+		function displayMessage() {
+
+            var total = 0;
+            var purchase = "";
+            var name = document.getElementById("firstname").value;
+            var email = document.getElementById("email").value;
+            var TeleNo = document.getElementById("TPno").value;
+
+            var qty1 = document.getElementById("Qty1").value;
+            var price1 = 15;
+            var qty2 = document.getElementById("Qty2").value;
+            var price2 = 20;
+            var qty3 = document.getElementById("Qty3").value;
+            var price3 = 70;
+			var qty4 = document.getElementById("Qty4").value;
+            var price4 = 100;
+			var qty5 = document.getElementById("Qty5").value;
+            var price5 = 20;
+	
+
+            var check = 0;
+            if (name != ""){
+                if (email != ""){
+                    if (TeleNo != ""){
+                        if (qty1 > 0){
+                            total = total + (price1 * qty1);
+                            purchase = purchase + "Hameedias blue trousers for men        " + qty1 + " * " + price1 + " = " + (price1 * qty1) + "\n";
+                        }
+                        if (qty2 > 0){
+                            total = total + (price2 * qty2);
+                            purchase = purchase + "Signature blue shirt      " + qty2 + " * " + price2 + " = " + (price2 * qty2) + "\n";
+                        }
+                        if (qty3 > 0){
+                            total = total + (price3 * qty3);
+                            purchase = purchase + "Adidas Red shoes     " + qty3 + " * " + price3 + " = " + (price3 * qty3) + "\n";
+                        }
+						if (qty4 > 0){
+                            total = total + (price4 * qty4);
+                            purchase = purchase + "Dark purple frock          " + qty4 + " * " + price4 + " = " + (price4 * qty4) + "\n";
+                        }
+						if (qty5 > 0){
+                            total = total + (price5 * qty5);
+                            purchase = purchase + "Rayban black glasses          " + qty5 + " * " + price5 + " = " + (price5 * qty5) + "\n";
+						}
+
+                        printReceipt(name, purchase, total, email);
+                    }else{
+                        check++ ;
+                        alert("T- Phone number expected!");
+                    }
+                }else{
+                    check++ ;
+                    alert("E- mail expected!");
+                }
+            }else{
+                check++ ;
+                alert("Name expected!")
+            }
+
+            if(check == 0){
+                emptyTextFields();
+            }
+        }
+
+        function printReceipt(name, purchase, total, email){
+			let x=(total*0.10)
+			let y=total-x
+            alert(
+                "Hi " + name + ", \n" + "You have bought:\n\n" +	
+                purchase + "\n" +
+                "Total : $ " + total +"\n\n" +
+				"Discount : 5%"+"\n"+
+				"Discounted total : $"+x+"\n\n"+
+				"Amount to be paid :$"+y+"\n"+
+                "Confirmation Invoice will be sent to : " + email
+            );
+        }
+
+        function emptyTextFields(){
+            document.getElementById("firstname").value = "";
+			document.getElementById("lastname").value = "";
+            document.getElementById("TPno").value = "";
+           	document.getElementById("email").value = "";
+			document.getElementById("del").value = "";
+            document.getElementById("Qty1").value = "0";
+           	document.getElementById("Qty2").value = "0";
+			document.getElementById("Qty3").value = "0";
+			document.getElementById("Qty4").value = "0";
+			document.getElementById("cardname").value = "";
+			document.getElementById("cardnumber").value = "";
+			document.getElementById("expyear").value = "";
+			document.getElementById("bill").value = "";
+        }
+	
+		function myFunction(selectTag) {
+			var listValue = selectTag.options[selectTag.selectedIndex].text;
+			document.getElementById("head").style.fontSize = listValue;
+			document.getElementById("head1").style.fontSize = listValue;
+			document.getElementById("head2").style.fontSize = listValue;
+			document.getElementById("head3").style.fontSize = listValue;
+			document.getElementById("head4").style.fontSize = listValue;
+			document.getElementById("head5").style.fontSize = listValue;
+			document.getElementById("pro1").style.fontSize = listValue;
+			document.getElementById("pro2").style.fontSize = listValue;
+			document.getElementById("pro3").style.fontSize = listValue;
+			document.getElementById("pro4").style.fontSize = listValue;
+			document.getElementById("pro5").style.fontSize = listValue;
+			document.getElementById("pro6").style.fontSize = listValue;
+			document.getElementById("pro7").style.fontSize = listValue;
+			document.getElementById("pro8").style.fontSize = listValue;
+			document.getElementById("pro9").style.fontSize = listValue;
+			document.getElementById("pro10").style.fontSize = listValue;
+			document.getElementById("pro11").style.fontSize = listValue;
+			document.getElementById("pro12").style.fontSize = listValue;
+		}
+		var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} 
+	else {
+		mybutton.style.display = "none";
+	}
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
+		
+		
+	
+</html>

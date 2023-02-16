@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+	footer {
+		position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px
+		padding: 3px;
+		background-color:#293243;
+		text-align:center;
+		color: white;
+			}
+</style>
+<link href="../css files/gallery.css" rel="stylesheet" type="text/css" >
+</head>
+<body background="../Image files/bg2.png" alt="background">
+	<img src = "../Image files/logo.jpg" width="150" height="100" alt="logo"><br>
+		 <div class="navbar">
+				<a href="../../Student 2/html files/main page 5.html">Home</a>
+				<a href="Home.HTML">Account</a>
+				<a href="gallery 5.HTML">Gallery</a>
+				<a href="../../Student 2/html files/Rate us.HTML">Rate us</a>
+				<a href="../../Student 2/html files/Quizstart 5.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 5.html">Purchase</a>
+				<a href="../../student 1/html files/about us.html">About us</a>
+				<a href="../../Student 4/pulldown.html">background Color Changer</a>
+				<a href="../../Student 4/newsletter.html">Subscribe</a>
+  
+		</div>
+		
+	<center><font color="white">
+	<img src="../Image files/statue.png" width='100' height='155' onmouseover="guitar()" onmouseout="removeContent()" alt="statue">
+	<img src="../Image files/painting1.jpg" width='130' height='155' onmouseover="blender()" onmouseout="removeContent()" alt="painting1">
+	<img src="../Image files/painting2.jpg"  width='130' height='155' onmouseover="tennis()" onmouseout="removeContent()" alt="painting2">
+	<img src="../Image files/painting3.jpg"  height='155' onmouseover="shoes()" onmouseout="removeContent()" alt="painting3">
+	<img src="../Image files/painting4.jpg" height='155'onmouseover="waterhoes()" onmouseout="removeContent()" alt="painting4" >
+	<div id="descriptionAndImageArea"> 
+	</div>
+	</center>
+	
+	<script>
+		function guitar(){
+			var guitar=document.createElement("img");
+            guitar.id="enlargePhoto";
+            guitar.src ="../Image files/statue.png";
+			guitar.width="300";
+			guitar.height="450";
+			var locationName=document.createElement("div");
+			locationName.id="name";
+			locationName.innerHTML="statue";
+			document.getElementById("descriptionAndImageArea").appendChild(locationName);
+			document.getElementById("descriptionAndImageArea").appendChild(guitar);
+			document.getElementById("descriptionAndImageArea").innerHTML+="<p>Brian Donnelly (born November 4, 1974), known professionally as Kaws (stylized as KAWS), is an American artist and designer. His work includes repeated use of a cast of figurative characters and motifs, some dating back to the beginning of his career in the 1990s,[1] initially painted in 2D and later realized in 3D. Some of his characters are his own creations while others are reworked versions of existing icons.<p>"
+			}
+		
+		function blender(){
+                var blender=document.createElement("img");
+                blender.id="enlargePhoto";
+                blender.src="../Image files/painting1.jpg";
+				blender.width="300";
+				blender.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="painting ";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(blender);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>The Mona Lisa (/ˌmoʊnə ˈliːsə/; Italian: Gioconda [dʒoˈkonda] or Monna Lisa [ˈmɔnna ˈliːza]; French: Joconde [ʒɔkɔ̃d]) is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance,[4][5] it has been described as the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world. The painting's novel qualities include the subject's enigmatic expression,[7] the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism.<p>"
+			}
+			
+		function tennis(){
+                var tennis=document.createElement("img");
+                tennis.id="enlargePhoto";
+                tennis.src="../Image files/painting2.jpg";
+				tennis.width="300";
+				tennis.height="400";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="painting ";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(tennis);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>Drawing is a form of visual art in which an artist uses instruments to mark paper or other two-dimensional surface. Drawing instruments include graphite pencils, pen and ink, various kinds of paints, inked brushes, colored pencils, crayons, charcoal, chalk, pastels, erasers, markers, styluses, and metals (such as silverpoint). Digital drawing is the act of drawing on graphics software in a computer. Common methods of digital drawing include a stylus or finger on a touchscreen device, stylus- or finger-to-touchpad, or in some cases, a mouse. There are many digital art programs and devices.<p>"
+			}
+				
+		function shoes(){
+                var shoes=document.createElement("img");
+                shoes.id="enlargePhoto";
+                shoes.src="../Image files/painting3.jpg";
+				shoes.width="400";
+				shoes.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="painting ";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(shoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>Japanese art covers a wide range of art styles and media, including ancient pottery, sculpture, ink painting and calligraphy on silk and paper, ukiyo-e paintings and woodblock prints, ceramics, origami, and more recently manga and anime. It has a long history, ranging from the beginnings of human habitation in Japan, sometime in the 10th millennium BC, to the present-day country.<p>"
+			}
+
+		function waterhoes(){
+                var waterhoes=document.createElement("img");
+                waterhoes.id="enlargePhoto";
+                waterhoes.src="../Image files/painting4.jpg";
+				waterhoes.width="300";
+				waterhoes.height="300";
+                var locationName=document.createElement("div");
+                locationName.id="name";
+                locationName.innerHTML="painting ";
+                document.getElementById("descriptionAndImageArea").appendChild(locationName);
+                document.getElementById("descriptionAndImageArea").appendChild(waterhoes);
+                document.getElementById("descriptionAndImageArea").innerHTML+="<p>The Starry Night is an oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village.[1][2][3] It has been in the permanent collection of the Museum of Modern Art in New York City since 1941, acquired through the Lillie P. Bliss Bequest. Widely regarded as Van Gogh's magnum opus,The Starry Night is one of the most recognized paintings in Western art<p>"
+			}
+				
+		function removeContent(){
+                document.getElementById("descriptionAndImageArea").innerHTML="";
+            }
+	</script>
+<footer>
+  <p>Page editor<br>
+  <a href="student1pageeditor.html"><font color="white">Vinuwara Ronath Jayasuriya</font></a></p>
+</footer>
+</font>
+		
+</body>
+</html>

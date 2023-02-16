@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rate us</title>
+	<link href="../css files/Rate us.css" rel="stylesheet" type="text/css" >
+	<script defer src="../javaScript files/rate us error.js" ></script>
+		<style>
+			footer {
+			position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px
+			padding: 3px;
+			background-color:#293243	;
+			text-align:center;
+			color: white;
+			}
+		</style>
+
+	
+</head>
+	<body background="../image files/bg2.png">
+		<img src = "../image files/logo.jpg" width="125" height="120"><br>
+		 <div class="navbar">
+				<a href="main page 1.html">Home</a>
+				<a href="../../Student 1/html files/Home.HTML">Account</a>
+				<a href="../../Student 1/html files/gallery 1.HTML">Gallery</a>
+				<a href="Rate us.HTML">Rate us</a>
+				<a href="Quizstart 1.HTML">Quiz</a>
+				<a href="../../student 3/html files/purchase 1.html">Purchase</a>
+				<a href="../../student 3/html files/aboutus.html">About us</a>
+				<a href="">aaaaa</a>
+  
+		</div>
+	<header>
+			<h1 style="color:light blue;" align="center" ><font color="white">Rate this app</font></h1>
+	</header>
+	
+	
+	
+	<div class="stars">
+	<form name="myForm" id="usrform"onsubmit="return validateForm()" method="post">	
+		<font color="red"><div id="error"></div></font>
+			<input class="star star-5" id="star5" type="radio" name="star5" value="star5"/>
+			<label class="star star-5" for="star5"></label>
+			<input class="star star-4" id="star4" type="radio" name="star4"/>
+			<label class="star star-4" for="star4"></label>
+			<input class="star star-3" id="star3" type="radio" name="star3"/>
+			<label class="star star-3" for="star3"></label>
+			<input class="star star-2" id="star2" type="radio" name="star2"/>
+			<label class="star star-2" for="star2"></label>
+			<input class="star star-1" id="star1" type="radio" name="star1"/>
+			<label class="star star-1" for="star1"></label>
+	</div>
+	<font color="white">
+		Name: <input type="text" name="name" id="name">
+		<br>
+		Email: <input type="text" name="email" id="email"> 
+		<br>
+		comment:
+		<br><br>
+		<textarea rows="4" cols="50" name="comment" id="comment" form="usrform"></textarea>	
+	<br><br>
+	<div><center>
+	<input type="reset" >
+	<input type="submit" value="submit" onclick='display()'>
+	</div></center>
+	</form>
+	</font>
+
+		<footer>
+		<p>Page editor<br>
+		<a href="student2pageeditor.html"><font color="white">Oshen Geenath</font></a></p>
+		</footer>
+	</body>
+</html>
