@@ -13,3 +13,11 @@ Design and develop an interactive AI powered web application called “BuyAnythi
 </ol>
 <br>
 <hr>
+This is done by a group of members and they are as below
+<br>
+<ol>
+  <li>Oshen Geenath - IIT ID: 20210434 </li>
+  <li>Vinsuka Jeewandara - IIT ID: 20200471</li>
+  <li>Senesh Jayakody - IIT ID: 20210164</li>
+  <li>Romal Lokubalasooriya - IIT ID: 20210657</li>
+</ol>
