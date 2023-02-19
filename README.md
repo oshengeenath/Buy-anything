@@ -9,4 +9,5 @@ Design and develop an interactive AI powered web application called “BuyAnythi
   <li>Displaying past order purchases - listing page</li>
   <li>Send feedback</li>
   <li>Gallery page (new seller stores)</li>
+  <li>A JavaScript quiz created to increase the user engagement of the website.</li>
 </ol>
